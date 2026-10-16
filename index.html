@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="sv-SE">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Lilla Kaffehuset i Engelbrekt Gallerian i Ludvika – kaffe, fika, matigare smörgåsar och en varm plats för gemenskap."
+      content="Lilla Kaffehuset i Engelbrekt Gallerian i Ludvika erbjuder kaffe, fika, smörgåsar och ett varmt caféutbud för familjer, vänner och studerande."
     />
-    <title>Lilla Kaffehuset | Café & fika i Ludvika</title>
+    <meta
+      name="keywords"
+      content="Lilla Kaffehuset, café Ludvika, kaffe Ludvika, fika Ludvika, Engelbrekt Gallerian, café i Ludvika, god fika, smörgåsar i Ludvika"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#4f3828" />
+    <meta name="author" content="Lilla Kaffehuset" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta property="og:title" content="Lilla Kaffehuset | Café, fika och kaffe i Ludvika" />
+    <meta
+      property="og:description"
+      content="Hitta ett varmt café i Ludvika med kaffe, fika, matigare alternativ och en personlig atmosfär i Engelbrekt Gallerian."
+    />
+    <meta property="og:site_name" content="Lilla Kaffehuset" />
+    <meta property="og:image" content="./src/assets/logo.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lilla Kaffehuset | Café, fika och kaffe i Ludvika" />
+    <meta
+      name="twitter:description"
+      content="Café och fika i Engelbrekt Gallerian, Ludvika – goda drycker, smakfullt bakverk och plats för gemenskap."
+    />
+    <meta name="twitter:image" content="./src/assets/logo.jpg" />
+    <title>Lilla Kaffehuset | Café, fika och kaffe i Ludvika</title>
+    <link rel="icon" type="image/jpeg" href="./src/assets/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +40,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Lilla Kaffehuset",
+        "description": "Café i Engelbrekt Gallerian i Ludvika med kaffe, fika, smörgåsar och ett varmt, personligt bemötande.",
+        "areaServed": "Ludvika",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ludvika",
+          "streetAddress": "Engelbrekt Gallerian"
+        },
+        "servesCuisine": "Swedish",
+        "sameAs": [
+          "https://www.instagram.com/lillakaffehuset",
+          "https://www.facebook.com/profile.php?id=61594835073064"
+        ],
+        "image": "./src/assets/logo.jpg"
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -88,7 +133,7 @@
           </div>
 
           <div class="photo-card">
-            <img src="./src/assets/interior.jpg" alt="Mysig sittdel med runda träbord och levande ljus" />
+            <img src="./src/assets/interior.jpg" alt="Mysig sittdel med runda träbord och levande ljus" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -138,7 +183,7 @@
       <section id="om-oss" class="story-section section-light">
         <div class="container story-grid">
           <div class="story-image">
-            <img src="./src/assets/owner.jpg" alt="Ägaren till Lilla Kaffehuset sitter vid ett bord med en caffe latte och kanelbullar" />
+            <img src="./src/assets/owner.jpg" alt="Ägaren till Lilla Kaffehuset sitter vid ett bord med en caffe latte och kanelbullar" loading="lazy" decoding="async" />
           </div>
 
           <div class="story-copy">
@@ -180,7 +225,7 @@
           </div>
 
           <div class="menu-grid">
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">☕</span>
                 <span class="menu-card-title">Kaffe</span>
@@ -196,7 +241,7 @@
               <p class="menu-note">Laktosfri mjölk och växtbaserad dryck planeras till alla kaffedrycker.</p>
             </details>
 
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">🍵</span>
                 <span class="menu-card-title">Te &amp; matcha</span>
@@ -222,7 +267,7 @@
               <p class="menu-note">Te serveras hos oss. Priserna inkluderar moms.</p>
             </details>
 
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">🥐</span>
                 <span class="menu-card-title">Fika &amp; bakverk</span>
@@ -251,7 +296,7 @@
               <p class="menu-note">Priserna inkluderar moms. Fråga personalen om allergener.</p>
             </details>
 
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">🥤</span>
                 <span class="menu-card-title">Kalla drycker</span>
@@ -274,7 +319,7 @@
               <p class="menu-note">Priserna inkluderar moms och pant.</p>
             </details>
 
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">🫖</span>
                 <span class="menu-card-title">Lösviktste – ta med hem</span>
@@ -294,7 +339,7 @@
               <p class="menu-note">Priserna visas för 100 g respektive 250 g och inkluderar moms.</p>
             </details>
 
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">🎁</span>
                 <span class="menu-card-title">Te &amp; presenter</span>
@@ -307,7 +352,7 @@
               <p class="menu-note">Priserna inkluderar moms.</p>
             </details>
 
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">🥪</span>
                 <span class="menu-card-title">Matigare</span>
@@ -321,7 +366,7 @@
               <p class="menu-note">Färdiga och kalla alternativ med olika fyllningar, även vegetariskt. Går även bra att ta med.</p>
             </details>
 
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">🎁</span>
                 <span class="menu-card-title">Fikapaket</span>
@@ -332,7 +377,7 @@
               <p class="menu-note">Fler kombinationer kan komma att erbjudas.</p>
             </details>
 
-            <details class="menu-card">
+            <details class="menu-card" name="menu-prices">
               <summary class="menu-card-head">
                 <span class="mini-icon">🌿</span>
                 <span class="menu-card-title">För olika behov</span>
@@ -373,7 +418,7 @@
       <section class="feature section-light">
         <div class="container two-col feature-grid">
           <div class="photo-card">
-            <img src="./src/assets/chalkboard.jpg" alt="Handskriven meny på tavlan med kaffe och fika" />
+            <img src="./src/assets/chalkboard.jpg" alt="Handskriven meny på tavlan med kaffe och fika" loading="lazy" decoding="async" />
           </div>
 
           <div>
@@ -430,7 +475,7 @@
 
           <div class="moments-lower">
             <div class="story-image large">
-              <img src="./src/assets/seating.jpg" alt="Sittplatser med soffa och små bord på caféet" />
+              <img src="./src/assets/seating.jpg" alt="Sittplatser med soffa och små bord på caféet" loading="lazy" decoding="async" />
             </div>
             <div class="moments-copy">
               <h3>Även små gäster är välkomna</h3>
@@ -513,7 +558,10 @@
           </div>
           <div class="footer-brand-copy">
             <h3>Lilla Kaffehuset Ludvika</h3>
-            <p>Engelbrekt Gallerian</p>
+            <address>
+              <p>Engelbrekt Gallerian</p>
+              <p>Ludvika</p>
+            </address>
           </div>
         </div>
 

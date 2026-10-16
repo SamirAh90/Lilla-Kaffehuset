@@ -467,6 +467,7 @@ h2 {
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 1.4rem;
 }
 
@@ -926,7 +927,12 @@ summary.menu-card-head:focus-visible {
   font-weight: 700;
 }
 
-.footer-brand-copy p {
+address {
+  font-style: normal;
+}
+
+.footer-brand-copy p,
+.footer-brand-copy address p {
   margin: 0.2rem 0 0;
   color: rgba(244, 239, 232, 0.9);
   font-size: 1.05rem;
