@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lilla Kaffehuset i Engelbrekt Gallerian i Ludvika – kaffe, fika, matigare smörgåsar och en varm plats för gemenskap."
+    />
+    <title>Lilla Kaffehuset | Café & fika i Ludvika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#hem" aria-label="Lilla Kaffehuset, till toppen">
+          <img src="./src/assets/logo.jpg" alt="Lilla Kaffehuset logotyp" />
+          <div>
+            <span class="brand-name">Lilla Kaffehuset</span>
+            <span class="brand-tag">Kaffe · Fika · Gemenskap</span>
+          </div>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+          <span class="menu-toggle-label">Meny</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+
+        <nav id="main-navigation" class="main-nav" aria-label="Huvudmeny">
+          <a href="#hem">Hem</a>
+          <a href="#meny">Meny</a>
+          <a href="#om-oss">Om oss</a>
+          <a href="#for-alla">För alla</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hem" class="hero">
+        <video
+          class="hero-video"
+          src="./src/assets/hero-video.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-hidden="true"
+        ></video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow light">Ludvika</p>
+          <h1>En liten plats för stora fikastunder</h1>
+          <p class="lead">
+            Välkommen till Lilla Kaffehuset i Engelbrekt Gallerian – ett varmt och personligt café
+            där gott kaffe, fika och gemenskap står i centrum.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#meny">Se menyn</a>
+            <a class="button secondary" href="#kontakt">Kontakta oss</a>
+          </div>
+          <p class="signature">Bra kaffe • Matiga mackor • Fika för fler</p>
+        </div>
+      </section>
+
+      <section class="welcome section-light">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow">Välkommen in</p>
+            <h2>Välkommen till Lilla Kaffehuset</h2>
+            <div class="copy-block">
+              <p>
+                Lilla Kaffehuset är tänkt som en liten och familjär mötesplats mitt i Ludvika. Här
+                ska du kunna slå dig ner med en god kopp kaffe, träffa en vän, komma med familjen
+                eller bara ta en lugn stund för dig själv.
+              </p>
+              <p>
+                Vi vill kombinera god kvalitet med rimliga priser och skapa ett café där så många
+                som möjligt känner sig välkomna.
+              </p>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./src/assets/interior.jpg" alt="Mysig sittdel med runda träbord och levande ljus" />
+          </div>
+        </div>
+
+        <div class="container values-grid">
+          <article class="info-card">
+            <span class="icon">☕</span>
+            <h3>Gott</h3>
+            <p>Kaffe, fika och matigare alternativ med fokus på kvalitet.</p>
+          </article>
+          <article class="info-card">
+            <span class="icon">🤝</span>
+            <h3>Personligt</h3>
+            <p>Ett mindre lokalt café där gästen får stå i centrum.</p>
+          </article>
+          <article class="info-card">
+            <span class="icon">👥</span>
+            <h3>För fler</h3>
+            <p>Alternativ för olika smaker, behov och åldrar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="for-alla" class="free-from">
+        <div class="container center-block">
+          <ul class="tag-list" aria-label="Alternativ för olika behov">
+            <li>GLUTENFRITT</li>
+            <li>LAKTOSFRITT</li>
+            <li>ALTERNATIV FÖR FLER</li>
+          </ul>
+          <h2>Glutenfritt och laktosfritt är en självklar del hos oss</h2>
+          <p>
+            Vi planerar separata och tydligt märkta alternativ för glutenfritt och laktosfritt –
+            och ett större fikautbud än bara biskvier. Även veganskt, vegetariskt och fika utan
+            tillsatt socker finns med i planen.
+          </p>
+          <div class="hero-actions center">
+            <a class="button primary alt" href="#meny">Se menyn och priser</a>
+            <a class="button secondary alt" href="#kontakt">Fråga om alternativ</a>
+          </div>
+          <p class="small-note">
+            Vi arbetar för att erbjuda fika och alternativ för olika behov. Sortimentet kan variera –
+            fråga alltid personalen om ingredienser och allergener.
+          </p>
+        </div>
+      </section>
+
+      <section id="om-oss" class="story-section section-light">
+        <div class="container story-grid">
+          <div class="story-image">
+            <img src="./src/assets/owner.jpg" alt="Ägaren till Lilla Kaffehuset sitter vid ett bord med en caffe latte och kanelbullar" />
+          </div>
+
+          <div class="story-copy">
+            <p class="eyebrow">Om oss</p>
+            <h2>Min tanke med Lilla Kaffehuset</h2>
+            <div class="copy-block">
+              <p>
+                Jag har länge tyckt om den känsla som uppstår när människor möts över en kopp kaffe.
+                Ett café kan vara så mycket mer än bara en plats där man köper något – det kan bli
+                en liten paus i vardagen, en mötesplats och en plats där man känner sig hemma.
+              </p>
+              <p>Därför vill jag skapa Lilla Kaffehuset.</p>
+              <p>
+                Min tanke är ett litet och personligt café mitt i Ludvika där människor i olika
+                åldrar kan känna sig välkomna. Du ska kunna komma hit med en vän, med familjen eller
+                ensam och slå dig ner en stund.
+              </p>
+              <p>
+                Jag vill lägga stor vikt vid gott kaffe, trevligt fika, matigare alternativ och ett
+                vänligt bemötande – samtidigt som priserna ska vara så rimliga som möjligt.
+              </p>
+              <p>
+                Lilla Kaffehuset ska inte försöka vara en stor kedja. Jag vill istället skapa något
+                mindre, varmare och mer personligt – ett kaffehus som blir en naturlig del av
+                Ludvika.
+              </p>
+            </div>
+            <p class="welcome-signature">Varmt välkommen in 🤎</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="meny" class="menu section-light">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Meny &amp; priser</p>
+            <h2>Vårt sortiment och våra priser</h2>
+            <p>Se vårt utbud av fika, dryck och te. Sortimentet kan variera.</p>
+          </div>
+
+          <div class="menu-grid">
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">☕</span>
+                <span class="menu-card-title">Kaffe</span>
+              </summary>
+              <ul>
+                <li><span>Bryggkaffe</span><strong>30 kr</strong></li>
+                <li><span>Espresso</span><strong>30 kr</strong></li>
+                <li><span>Dubbel espresso</span><strong>38 kr</strong></li>
+                <li><span>Cappuccino</span><strong>42 kr</strong></li>
+                <li><span>Caffè Latte</span><strong>45 kr</strong></li>
+                <li><span>Iskaffe</span><strong>49 kr</strong></li>
+              </ul>
+              <p class="menu-note">Laktosfri mjölk och växtbaserad dryck planeras till alla kaffedrycker.</p>
+            </details>
+
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">🍵</span>
+                <span class="menu-card-title">Te &amp; matcha</span>
+              </summary>
+              <ul>
+                <li><span>Earl of Organic (svart te)</span><strong>39 kr</strong></li>
+                <li><span>Dancing Queen (svart te)</span><strong>39 kr</strong></li>
+                <li><span>Lively Luke (grönt te)</span><strong>39 kr</strong></li>
+                <li><span>Miss Saigon (grönt te)</span><strong>39 kr</strong></li>
+                <li><span>Scarlet Wimbledon (rooibos)</span><strong>39 kr</strong></li>
+                <li><span>Amber Cactus (rooibos)</span><strong>39 kr</strong></li>
+                <li><span>Radiant Rose (fruktte)</span><strong>39 kr</strong></li>
+                <li><span>Vinteräpple (julte)</span><strong>39 kr</strong></li>
+                <li><span>Glöggte (julte)</span><strong>39 kr</strong></li>
+                <li><span>Julknäck (julte)</span><strong>39 kr</strong></li>
+                <li><span>Chai Latte</span><strong>45 kr</strong></li>
+                <li><span>Matcha Latte</span><strong>59 kr</strong></li>
+                <li><span>Iced Matcha Latte</span><strong>65 kr</strong></li>
+                <li><span>Hojicha – rostat grönt te</span><strong>45 kr</strong></li>
+                <li><span>Hojicha Latte</span><strong>59 kr</strong></li>
+                <li><span>Iced Hojicha Latte</span><strong>65 kr</strong></li>
+              </ul>
+              <p class="menu-note">Te serveras hos oss. Priserna inkluderar moms.</p>
+            </details>
+
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">🥐</span>
+                <span class="menu-card-title">Fika &amp; bakverk</span>
+              </summary>
+              <ul>
+                <li><span>Gluten- och mjölkfri brownie</span><strong>49 kr</strong></li>
+                <li><span>Citroncheesecake</span><strong>55 kr</strong></li>
+                <li><span>Vegansk passionscheesecake</span><strong>55 kr</strong></li>
+                <li><span>Chokladboll</span><strong>25 kr</strong></li>
+                <li><span>Chokladmoussetårta</span><strong>55 kr</strong></li>
+                <li><span>Gluten- och laktosfri chokladtårta</span><strong>59 kr</strong></li>
+                <li><span>Gluten- och mjölkfri hallonmuffins</span><strong>39 kr</strong></li>
+                <li><span>Kanelbulle, liten (35 g)</span><strong>25 kr</strong></li>
+                <li><span>Kärleksmums</span><strong>39 kr</strong></li>
+                <li><span>Morotskaka – Gray's</span><strong>45 kr</strong></li>
+                <li><span>Glutenfri morotskaka – Delicato</span><strong>45 kr</strong></li>
+                <li><span>Vegansk morotskaka</span><strong>45 kr</strong></li>
+                <li><span>Red Velvet-tårta</span><strong>59 kr</strong></li>
+                <li><span>Vegansk brownie med salt karamell och nötter</span><strong>59 kr</strong></li>
+                <li><span>Croissant</span><strong>32 kr</strong></li>
+                <li><span>Pain au chocolat</span><strong>35 kr</strong></li>
+                <li><span>Dagens kaka/bakverk</span><strong>35–45 kr</strong></li>
+                <li><span>Glutenfritt bakverk</span><strong>35–45 kr</strong></li>
+                <li><span>Laktosfritt bakverk</span><strong>35–45 kr</strong></li>
+              </ul>
+              <p class="menu-note">Priserna inkluderar moms. Fråga personalen om allergener.</p>
+            </details>
+
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">🥤</span>
+                <span class="menu-card-title">Kalla drycker</span>
+              </summary>
+              <ul>
+                <li><span>Coca-Cola Original 33 cl</span><strong>29 kr</strong></li>
+                <li><span>Coca-Cola Zero 33 cl</span><strong>29 kr</strong></li>
+                <li><span>Coca-Cola Original 50 cl</span><strong>35 kr</strong></li>
+                <li><span>Coca-Cola Zero 50 cl</span><strong>36 kr</strong></li>
+                <li><span>Fanta Exotic Zero 33 cl</span><strong>29 kr</strong></li>
+                <li><span>Fanta Orange Zero 33 cl</span><strong>29 kr</strong></li>
+                <li><span>Fanta Orange Zero 50 cl</span><strong>35 kr</strong></li>
+                <li><span>Sprite Zero 33 cl</span><strong>29 kr</strong></li>
+                <li><span>MER Apelsin 33 cl</span><strong>29 kr</strong></li>
+                <li><span>MER Päron 33 cl</span><strong>29 kr</strong></li>
+                <li><span>Bonaqua Naturell 33 cl</span><strong>25 kr</strong></li>
+                <li><span>Monster Energy 50 cl</span><strong>39 kr</strong></li>
+                <li><span>Monster Ultra 50 cl</span><strong>39 kr</strong></li>
+              </ul>
+              <p class="menu-note">Priserna inkluderar moms och pant.</p>
+            </details>
+
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">🫖</span>
+                <span class="menu-card-title">Lösviktste – ta med hem</span>
+              </summary>
+              <ul>
+                <li><span>Earl of Organic (100 g / 250 g)</span><strong>99 / 229 kr</strong></li>
+                <li><span>Dancing Queen (100 g / 250 g)</span><strong>79 / 179 kr</strong></li>
+                <li><span>Lively Luke (100 g / 250 g)</span><strong>89 / 199 kr</strong></li>
+                <li><span>Miss Saigon (100 g / 250 g)</span><strong>79 / 179 kr</strong></li>
+                <li><span>Scarlet Wimbledon (100 g / 250 g)</span><strong>89 / 199 kr</strong></li>
+                <li><span>Amber Cactus (100 g / 250 g)</span><strong>95 / 219 kr</strong></li>
+                <li><span>Radiant Rose (100 g / 250 g)</span><strong>85 / 189 kr</strong></li>
+                <li><span>Vinteräpple (100 g / 250 g)</span><strong>85 / 189 kr</strong></li>
+                <li><span>Glöggte (100 g / 250 g)</span><strong>79 / 179 kr</strong></li>
+                <li><span>Julknäck (100 g / 250 g)</span><strong>85 / 189 kr</strong></li>
+              </ul>
+              <p class="menu-note">Priserna visas för 100 g respektive 250 g och inkluderar moms.</p>
+            </details>
+
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">🎁</span>
+                <span class="menu-card-title">Te &amp; presenter</span>
+              </summary>
+              <ul>
+                <li><span>Rudolph Organic (80 g)</span><strong>99 kr</strong></li>
+                <li><span>Red Wine Santa Organic (80 g)</span><strong>99 kr</strong></li>
+                <li><span>Gathering of Friends – tekalender</span><strong>299 kr</strong></li>
+              </ul>
+              <p class="menu-note">Priserna inkluderar moms.</p>
+            </details>
+
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">🥪</span>
+                <span class="menu-card-title">Matigare</span>
+              </summary>
+              <ul>
+                <li><span>Smörgås</span><strong>49–59 kr</strong></li>
+                <li><span>Baguette</span><strong>59–69 kr</strong></li>
+                <li><span>Wrap</span><strong>59–69 kr</strong></li>
+                <li><span>Sallad</span><strong>69–79 kr</strong></li>
+              </ul>
+              <p class="menu-note">Färdiga och kalla alternativ med olika fyllningar, även vegetariskt. Går även bra att ta med.</p>
+            </details>
+
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">🎁</span>
+                <span class="menu-card-title">Fikapaket</span>
+              </summary>
+              <ul>
+                <li><span>Bryggkaffe + kanelbulle</span><strong>55 kr</strong></li>
+              </ul>
+              <p class="menu-note">Fler kombinationer kan komma att erbjudas.</p>
+            </details>
+
+            <details class="menu-card">
+              <summary class="menu-card-head">
+                <span class="mini-icon">🌿</span>
+                <span class="menu-card-title">För olika behov</span>
+              </summary>
+              <ul>
+                <li><span>Glutenfria alternativ</span><strong>GLUTENFRITT</strong></li>
+                <li><span>Laktosfria alternativ</span><strong>LAKTOSFRITT</strong></li>
+                <li><span>Mjölkfria och veganska alternativ</span><strong></strong></li>
+                <li><span>Vegetariska alternativ</span><strong></strong></li>
+                <li><span>Fika utan tillsatt socker</span><strong></strong></li>
+                <li><span>Alternativ som passar flera behov samtidigt när det är möjligt</span><strong></strong></li>
+              </ul>
+              <p class="menu-note">Fråga gärna personalen om innehåll och allergener. Sortiment och tillgänglighet kan variera.</p>
+            </details>
+          </div>
+
+          <div class="future-box">
+            <p class="future-title">Kanske kommer framöver…</p>
+            <ul>
+              <li>Bubble tea</li>
+              <li>Kulglass</li>
+              <li>Specialdrycker</li>
+              <li>Säsongsprodukter</li>
+            </ul>
+            <p>
+              Det finns redan intresse för både bubble tea och kulglass, men vi lovar inte att de
+              finns från första dagen.
+            </p>
+          </div>
+
+          <p class="menu-footer-copy">
+            Mat tillagas inte i lokalen – vi erbjuder färdiga och kalla alternativ. Alla priser
+            anges i SEK inklusive moms.
+          </p>
+        </div>
+      </section>
+
+      <section class="feature section-light">
+        <div class="container two-col feature-grid">
+          <div class="photo-card">
+            <img src="./src/assets/chalkboard.jpg" alt="Handskriven meny på tavlan med kaffe och fika" />
+          </div>
+
+          <div>
+            <p class="eyebrow">Matigt och prisvärt</p>
+            <h2>När du vill ha något mer än fika</h2>
+            <p class="copy-block">
+              Alla är inte sugna på något sött. Därför planerar vi matigare smörgåsar, baguetter,
+              wraps och sallader med olika fyllningar – färdiga och kalla alternativ, både för dig
+              som vill sitta ner och för dig som behöver något att ta med.
+            </p>
+            <ul class="chip-list">
+              <li>Kyckling</li>
+              <li>Ost och grönsaker</li>
+              <li>Avokado</li>
+              <li>Wrap</li>
+              <li>Sallad</li>
+              <li>Vegetariskt</li>
+              <li>Dagens alternativ</li>
+            </ul>
+            <p class="small-copy">Endast visuella exempel – sortimentet utvecklas och utbudet kan variera.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="moments section-light">
+        <div class="container">
+          <div class="section-head narrow">
+            <p class="eyebrow">För alla</p>
+            <h2>En plats för olika stunder</h2>
+          </div>
+
+          <div class="moments-grid">
+            <article class="moment-card">
+              <span class="moment-icon">☕</span>
+              <h3>Fika med vänner</h3>
+              <p>En kopp kaffe och tid att prata.</p>
+            </article>
+            <article class="moment-card">
+              <span class="moment-icon">📖</span>
+              <h3>En lugn stund</h3>
+              <p>Kom ensam, läs något eller koppla av.</p>
+            </article>
+            <article class="moment-card">
+              <span class="moment-icon">💻</span>
+              <h3>Jobb eller studier</h3>
+              <p>Gratis Guest Wi-Fi planeras för gäster som vill sitta en stund.</p>
+            </article>
+            <article class="moment-card">
+              <span class="moment-icon">👨‍👩‍👧</span>
+              <h3>Familjen</h3>
+              <p>Barnfamiljer ska känna sig välkomna och en liten barnhörna planeras om möjligt.</p>
+            </article>
+          </div>
+
+          <div class="moments-lower">
+            <div class="story-image large">
+              <img src="./src/assets/seating.jpg" alt="Sittplatser med soffa och små bord på caféet" />
+            </div>
+            <div class="moments-copy">
+              <h3>Även små gäster är välkomna</h3>
+              <p>
+                Planen är att skapa en liten barnvänlig hörna där yngre gäster kan sysselsätta sig
+                en stund medan de vuxna fikar – om lokalens utformning och utrymme tillåter det.
+              </p>
+              <h3>Ta en kaffe. Stanna en stund.</h3>
+              <p>
+                Gratis Guest Wi-Fi planeras för våra gäster. Perfekt för dig som vill läsa, arbeta
+                eller studera över en kopp kaffe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seasons section-light">
+        <div class="container">
+          <div class="season-grid">
+            <article class="season-card">
+              <div class="season-icon" aria-hidden="true">✿</div>
+              <h3>Vår</h3>
+              <p>Friska smaker och kalla drycker</p>
+            </article>
+            <article class="season-card">
+              <div class="season-icon" aria-hidden="true">☼</div>
+              <h3>Sommar</h3>
+              <p>Glass, iskaffe och svalkande alternativ</p>
+            </article>
+            <article class="season-card">
+              <div class="season-icon" aria-hidden="true">≋</div>
+              <h3>Höst</h3>
+              <p>Kaffe, kanel och varmare smaker</p>
+            </article>
+            <article class="season-card">
+              <div class="season-icon" aria-hidden="true">❄</div>
+              <h3>Vinter</h3>
+              <p>Varm choklad, kaffe och klassiskt vinterfika</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="social section-light">
+        <div class="container social-wrap">
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/lillakaffehuset?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw=="
+              class="social-link dark"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Följ Lilla Kaffehuset på Instagram"
+            >
+              <span aria-hidden="true">◎</span>
+              Följ oss på Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61594835073064"
+              class="social-link light"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Följ Lilla Kaffehuset på Facebook"
+            >
+              <span aria-hidden="true">f</span>
+              Följ oss på Facebook
+            </a>
+          </div>
+      
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="kontakt" class="site-footer">
+      <div class="container footer-archive">
+        <div class="footer-brand-block">
+          <div class="brand-badge">
+            <img src="./src/assets/logo.jpg" alt="Lilla Kaffehusets logotyp" />
+          </div>
+          <div class="footer-brand-copy">
+            <h3>Lilla Kaffehuset Ludvika</h3>
+            <p>Engelbrekt Gallerian</p>
+          </div>
+        </div>
+
+        <div class="footer-nav-block">
+          <h4>MENY</h4>
+          <nav class="footer-nav" aria-label="Sidfotsmeny">
+            <a href="#hem">Hem</a>
+            <a href="#meny">Meny</a>
+            <a href="#om-oss">Om oss</a>
+            <a href="#kontakt">Kontakt</a>
+          </nav>
+        </div>
+
+        <div class="footer-social-block">
+          <h4>SOCIALA MEDIER</h4>
+          <ul class="footer-social-list">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=61594835073064"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/lillakaffehuset?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </li>
+          </ul>
+          <p class="footer-script">Kaffe, fika och gemenskap i hjärtat av<br />Ludvika.</p>
+        </div>
+      </div>
+
+      <div class="container copyright-wrap">
+        <div class="copyright">
+          © 2026 Lilla Kaffehuset, Ludvika. Alla rättigheter förbehållna.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainNavigation = document.querySelector("#main-navigation");
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+        mainNavigation.classList.toggle("is-open", !isOpen);
+      });
+
+      mainNavigation.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuToggle.setAttribute("aria-expanded", "false");
+          mainNavigation.classList.remove("is-open");
+        });
+      });
+    </script>
+  </body>
+</html>
