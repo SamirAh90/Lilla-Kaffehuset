@@ -314,6 +314,63 @@ h3 {
   font-size: 1.02rem;
 }
 
+.storytime-notice {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border: 1px solid #d9b98f;
+  border-radius: 20px;
+  background: #fff8ec;
+  box-shadow: 0 12px 28px rgba(62, 42, 31, 0.07);
+}
+
+.storytime-icons {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.storytime-label {
+  margin: 0 0 0.25rem;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.storytime-notice h3 {
+  margin: 0;
+  color: var(--primary-dark);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.35rem, 2.3vw, 1.7rem);
+  line-height: 1.2;
+}
+
+.storytime-notice p {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.storytime-notice .storytime-time {
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.storytime-notice .storytime-welcome {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .storytime-notice {
+    grid-template-columns: 1fr;
+  }
+}
+
 h2 {
   font-size: clamp(2.1rem, 3vw, 3rem);
   line-height: 1.08;
