@@ -620,6 +620,44 @@ summary.menu-card-head:focus-visible {
   color: var(--primary-dark);
 }
 
+.menu-card li.menu-group-label {
+  margin-top: 0.45rem;
+  padding-bottom: 0.35rem;
+  border-bottom-color: var(--border);
+}
+
+.menu-card li.menu-group-label:first-child {
+  margin-top: 0;
+}
+
+.menu-card li.menu-group-label span {
+  color: var(--primary-dark);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.menu-card li.menu-item-with-description {
+  align-items: flex-start;
+}
+
+.menu-item-with-description > span {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.menu-item-with-description b {
+  color: var(--text);
+}
+
+.menu-item-with-description small {
+  max-width: 34rem;
+  line-height: 1.45;
+}
+
+.menu-item-with-description strong {
+  flex: 0 0 auto;
+}
+
 .menu-note {
   margin-top: 1rem;
   color: var(--muted);
